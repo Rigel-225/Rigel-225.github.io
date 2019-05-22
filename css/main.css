@@ -1259,16 +1259,6 @@ pre .javascript .function {
 .use-motion .collection-title {
   opacity: 0;
 }
-.post-body p a {
-  color: #0593d3;
-  border-bottom: none;
-  border-bottom: 1px solid #0593d3;
-}
-.post-body p a:hover {
-  color: #fc6423;
-  border-bottom: none;
-  border-bottom: 1px solid #fc6423;
-}
 .posts-expand {
   padding-top: 40px;
 }
@@ -1711,7 +1701,7 @@ pre .javascript .function {
   width: 0;
   z-index: 1040;
   box-shadow: inset 0 2px 6px #000;
-  background: #222;
+  background-color: rgba(0,0,0,0.75);
 }
 .sidebar a,
 .sidebar span.exturl {
@@ -1898,7 +1888,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a4e0ff;
+  background: #c495a7;
 }
 .feed-link,
 .chat {
@@ -2500,7 +2490,7 @@ hr {
   margin-top: 80px;
 }
 .header {
-  background: #f5f5f5;
+  background: rgba(255,255,255,0);
 }
 .header-inner {
   padding: 20px 0;
@@ -2607,7 +2597,7 @@ hr {
 .menu-item-active a,
 .menu .menu-item a:hover,
 .menu .menu-item span.exturl:hover {
-  background: #e1e1e1;
+  background: rgba(255,255,255,0.5);
 }
 .menu {
   margin: 0;
@@ -2843,6 +2833,22 @@ hr {
   margin-top: 60px;
   margin-bottom: 60px;
   padding: 25px;
+  background-color: rgba(255,255,255,0.75);
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+body {
+  background-image: url("/images/background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.bg_content {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.footer {
+  background-color: rgba(255,255,255,0);
 }
